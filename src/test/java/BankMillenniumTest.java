@@ -55,17 +55,17 @@ public class BankMillenniumTest {
 
 
         Thread.sleep(3000);
-        driver.findElement(By.xpath("//*[@id=\"keywordSearchDsk\"]")).sendKeys("Tester");
-        driver.findElement(By.xpath("//*[@id=\"locationSearchDsk\"]")).sendKeys("Wrocław");
-        driver.findElement(By.xpath("//*[@id=\"locationSearchDsk\"]")).sendKeys(Keys.ENTER);
+        driver.findElement(By.xpath("//*[@id='keywordSearchDsk']")).sendKeys("Tester");
+        driver.findElement(By.xpath("//*[@id='locationSearchDsk']")).sendKeys("Wrocław");
+        driver.findElement(By.xpath("//*[@id='locationSearchDsk']")).sendKeys(Keys.ENTER);
         Thread.sleep(3000);
-        driver.findElement(By.xpath("//*[@id=\"cs-root\"]/div/div[1]/div[2]/div/div/div/div/div/div/div[2]/div[2]/div/div/div[2]/div/div[3]/div/div/div/a")).click();
+        driver.findElement(By.xpath("//a[@class=' p-link p-f-sz-d p-link-def p-t-full-hv-primary50 p-f-w-6']")).click();
         Thread.sleep(3000);
         driver.findElement(By.xpath("//button[@data-tag='applyNowButton']")).click();
         Thread.sleep(3000);
         driver.findElement(By.xpath("//*[@id='actionItem.firstName.idTag']")).sendKeys("Imie");
-        driver.findElement(By.xpath("//*[@id=\"actionItem.lastName.idTag\"]")).sendKeys("Nazwisko");
-        driver.findElement(By.xpath("//*[@id=\"actionItem.email.idTag\"]")).sendKeys("mail@gmail.com");
+        driver.findElement(By.xpath("//*[@id='actionItem.lastName.idTag']")).sendKeys("Nazwisko");
+        driver.findElement(By.xpath("//*[@id='actionItem.email.idTag']")).sendKeys("mail@gmail.com");
         By dateOfBirth = By.xpath("//input[@type='text']");
         driver.findElement(dateOfBirth).sendKeys("11.11.1999");
         By applyCv = By.xpath("//*[@id='resumeFileUpload']");
